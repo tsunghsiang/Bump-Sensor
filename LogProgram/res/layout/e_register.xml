@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:ignore="Deprecated" >
+
+    <TextView
+        android:id="@+id/e_mailbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="20dp"
+        android:layout_y="72dp"
+        android:text="@string/e_email"
+        android:textColor="@color/hard_purple"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/e_mailinput"
+        android:layout_width="244dp"
+        android:layout_height="wrap_content"
+        android:layout_x="90dp"
+        android:layout_y="65dp"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/e_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="21dp"
+        android:layout_y="126dp"
+        android:text="@string/e_password"
+        android:textColor="@color/hard_purple"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/e_pwdinput"
+        android:layout_width="198dp"
+        android:layout_height="wrap_content"
+        android:layout_x="137dp"
+        android:layout_y="121dp"
+        android:ems="10"
+        android:inputType="textPassword" >
+
+        <requestFocus />
+    </EditText>
+
+    <FrameLayout
+        android:layout_width="308dp"
+        android:layout_height="197dp"
+        android:layout_x="22dp"
+        android:layout_y="183dp"
+        android:background="@color/cyan_blue" >
+
+        <TextView
+            android:id="@+id/e_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/e_name"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/hard_purple" />
+
+        <TextView
+            android:id="@+id/e_car_model"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="80dp"
+            android:text="@string/e_car_type"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/hard_purple" />
+
+        <TextView
+            android:id="@+id/e_mobile_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="140dp"
+            android:text="@string/e_mobile_type"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/hard_purple" />
+
+        <EditText
+            android:id="@+id/c_login_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/e_carinput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="80dp"
+            android:ems="10" android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/c_login_mail"
+            android:layout_width="137dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="140dp"
+            android:ems="10" android:inputType="text"/>
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/c_next_step"
+        android:layout_width="182dp"
+        android:layout_height="wrap_content"
+        android:layout_x="86dp"
+        android:layout_y="405dp"
+        android:onClick="submitButton"
+        android:text="@string/e_next_step"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/e_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="42dp"
+        android:layout_y="19dp"
+        android:text="@string/account_application"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/yellow"
+        android:textSize="30sp"
+        android:textStyle="bold|italic" />
+
+</AbsoluteLayout>

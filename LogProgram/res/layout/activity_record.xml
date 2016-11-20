@@ -1,0 +1,568 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".RecordActivity" >
+    
+	<TableLayout
+	    android:id="@+id/tl_data"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:shrinkColumns="*"
+	    android:stretchColumns="*" >
+	    
+		<!-- Table Layout : Current Status -->	  
+	    <TableLayout
+	    android:id="@+id/tl_data"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:shrinkColumns="*"
+	    android:stretchColumns="*" >
+	    
+	    <!-- Title : Current Status -->
+	    <TableRow
+	        android:id="@+id/tr_title_CurrentStatus"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center_horizontal" >
+
+	        <TextView
+	            android:id="@+id/tv_title_CurrentStatus"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:textColor="@android:color/white"
+	            android:textColorHint="@android:color/white"
+	            android:layout_span="6"
+	            android:gravity="center"
+	            android:text="Current Status"
+	            android:textSize="18dp"
+	            android:textStyle="bold"
+	            android:typeface="serif" >
+	        </TextView>
+	    </TableRow>
+	    
+	    <!--  On Rack  -->
+	    <TableRow
+	        android:id="@+id/tr_onRack"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+
+	        <TextView
+	            android:id="@+id/tv_onracktest"
+	            android:textColor="@android:color/white"
+	            android:textColorHint="@android:color/white"
+	            android:text="On Rack:"
+	            android:textStyle="bold" >
+	        </TextView>
+
+	        <TextView
+	            android:id="@+id/tv_onracktestresult"
+	            android:textColor="@android:color/white"
+	            android:textColorHint="@android:color/white" >
+
+	        </TextView>
+	        
+	    </TableRow>
+	    
+	    <!--  Speed  -->
+	    <TableRow
+	        android:id="@+id/tr_Speed"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+	        
+	        <TextView
+	            android:id="@+id/tv_speed"
+	            android:textColor="@android:color/white"
+	       		 android:textColorHint="@android:color/white"
+	            android:text="Speed:"
+	            android:textStyle="bold" >
+	        </TextView>
+
+	        <TextView
+	            android:id="@+id/tv_speedresult"
+	            android:gravity="center_horizontal"
+	            android:textColor="@android:color/white"
+	        	android:textColorHint="@android:color/white"
+	            android:text="" >
+	        </TextView>
+	        
+	        <TextView
+	            android:id="@+id/tv_speedunit"
+	            android:gravity="center_horizontal"
+	            android:textColor="@android:color/white"
+	            android:textColorHint="@android:color/white" >
+
+	        </TextView>
+	    </TableRow>
+	    
+	    <!--  Time  -->
+	    <TableRow
+	        android:id="@+id/tr_time"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+
+	        <TextView
+	            android:id="@+id/tv_time"
+	            android:text="Time:"
+	            android:textColor="@android:color/white"
+	        	android:textColorHint="@android:color/white"
+	            android:textStyle="bold" >
+	        </TextView>
+
+	        <TextView
+	            android:id="@+id/tv_timeresult"
+	            android:textColor="@android:color/white"
+	        	android:textColorHint="@android:color/white"
+	            android:text="" >
+	        </TextView>
+	        
+	    </TableRow>
+
+		<!--  Latitude  -->
+	    <TableRow
+	        android:id="@+id/tr_lat"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+
+	        <TextView
+	            android:id="@+id/tv_lat"
+	            android:text="Latitude:"
+	            android:textColor="@android:color/white"
+	       		 android:textColorHint="@android:color/white"
+	            android:textStyle="bold" >
+	        </TextView>
+
+	        <TextView
+	            android:id="@+id/tv_latresult"
+	            android:gravity="center_horizontal"
+	            android:textColor="@android:color/white"
+	        	android:textColorHint="@android:color/white"
+	            android:text="" >
+	        </TextView>
+
+	    </TableRow>
+	    
+	    <!--  Longitude  -->
+	    <TableRow
+	        android:id="@+id/tr_lng"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+
+	        <TextView
+	            android:id="@+id/tv_lng"
+	            android:textColor="@android:color/white"
+	        	android:textColorHint="@android:color/white"
+	            android:text="Longitude:"
+	            android:textStyle="bold" >
+	        </TextView>
+
+	        <TextView
+	            android:id="@+id/tv_lngresult"
+	            android:gravity="center_horizontal"
+	            android:textColor="@android:color/white"
+	        	android:textColorHint="@android:color/white"
+	            android:text="" >
+	        </TextView>
+
+	    </TableRow>
+	    
+	    <!-- Blank Row -->
+	    <TableRow
+	        android:id="@+id/tr_blank"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+
+	        <TextView
+	            android:id="@+id/tv_blank"
+	            android:text=""
+	            android:textColor="@android:color/white"
+	        android:textColorHint="@android:color/white"
+	            android:textStyle="bold" >
+	        </TextView>
+
+	    </TableRow>
+	    
+	    </TableLayout>
+	    
+	<!-- Table Layout : Small Sigma -->	    
+	<TableLayout
+	    android:id="@+id/tl_smallSigma"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:shrinkColumns="*"
+	    android:stretchColumns="*" >    
+
+	<!-- Title : Small Sigma -->
+	<TableRow
+	      android:id="@+id/tr_title_CurrentStatus"
+	      android:layout_width="match_parent"
+	      android:layout_height="wrap_content"
+	      android:gravity="center_horizontal" >
+
+	      <TextView
+	          android:id="@+id/tv_title_CurrentStatus"
+	          android:layout_width="match_parent"
+	          android:layout_height="wrap_content"
+	          android:layout_span="6"
+	          android:gravity="center"
+	          android:text="Small Sigma"
+	          android:textSize="18dp"
+	          android:textColor="@android:color/white"
+	        android:textColorHint="@android:color/white"
+	          android:textStyle="bold"
+	          android:typeface="serif" >
+	      </TextView>
+	</TableRow>
+	    
+	<!-- Small Sigma 1,2,3,4 -->
+ 	<TableRow  
+        android:id="@+id/tableRow1"  
+        android:layout_height="wrap_content"  
+        android:layout_width="wrap_content">  
+
+        <TextView
+            android:id="@+id/tv_smallS1"
+            android:layout_width="80dp"
+            android:background="@android:color/background_dark"
+            android:text="[1]:"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:textStyle="bold"
+            android:typeface="serif" >
+
+		</TextView>  
+
+        <TextView
+            android:id="@+id/tv_smallS2"
+            android:layout_width="80dp"
+            android:background="@android:color/background_dark"
+            android:text="[2]:"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:textStyle="bold"
+            android:typeface="serif" >
+</TextView>  
+        <TextView  
+            android:id="@+id/tv_smallS3" 
+            android:textColor="@android:color/white"
+	        android:textColorHint="@android:color/white" 
+            android:layout_width="80dp"
+            android:text="[3]:"  
+            android:textStyle="bold"  
+            android:typeface="serif"></TextView>  
+        <TextView  
+            android:id="@+id/tv_smallS4" 
+            android:textColor="@android:color/white"
+	        android:textColorHint="@android:color/white" 
+            android:layout_width="80dp"
+            android:text="[4]:"  
+            android:textStyle="bold"  
+            android:typeface="serif"></TextView>  
+
+    </TableRow>
+    
+ 	<!-- Small Sigma 5,6,7,8 -->
+ 	<TableRow  
+        android:id="@+id/tableRow2"  
+        android:layout_height="wrap_content"  
+        android:layout_width="wrap_content">  
+
+        <TextView
+            android:id="@+id/tv_smallS5"
+            android:layout_width="80dp"
+            android:textColor="@android:color/white"
+	        android:textColorHint="@android:color/white"
+            android:text="[5]:"
+            android:textStyle="bold"
+            android:typeface="serif" >
+
+		</TextView>  
+        <TextView  
+            android:id="@+id/tv_smallS6"  
+            android:layout_width="80dp"
+            android:textColor="@android:color/white"
+	        android:textColorHint="@android:color/white"
+            android:text="[6]:"  
+            android:textStyle="bold"  
+            android:typeface="serif"></TextView>  
+        <TextView  
+            android:id="@+id/tv_smallS7"  
+            android:textColor="@android:color/white"
+	        android:textColorHint="@android:color/white"
+            android:layout_width="80dp"
+            android:text="[7]:"  
+            android:textStyle="bold"  
+            android:typeface="serif"></TextView>  
+
+        <TextView
+            android:id="@+id/tv_smallS8"
+            android:layout_width="80dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:textStyle="bold"
+            android:typeface="serif" >
+</TextView>  
+
+    </TableRow>
+    
+ 		<!-- Blank Row -->
+	    <TableRow
+	        android:id="@+id/tr_blank"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+
+	        <TextView
+	            android:id="@+id/tv_blank"
+	            android:text=""
+	            android:textStyle="bold" >
+	        </TextView>
+
+		</TableRow>
+
+	</TableLayout>
+	
+	<!-- Table Layout : Bumping Events -->	    
+	<TableLayout
+	    android:id="@+id/tl_bumpingEvents"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:shrinkColumns="*"
+	    android:stretchColumns="*" >  
+	    
+	<!-- Title : Bumping Event -->
+	<TableRow
+	      android:id="@+id/tr_title_BumpingEvent"
+	      android:layout_width="match_parent"
+	      android:layout_height="wrap_content"
+	      android:gravity="center_horizontal" >
+
+	      <TextView
+	          android:id="@+id/tv_title_BumpingEvent"
+	          android:layout_width="match_parent"
+	          android:layout_height="wrap_content"
+	          android:layout_span="6"
+	          android:gravity="center"
+	          android:text="Bumping Events"
+	          android:textSize="18dp"
+	          android:textStyle="bold"
+	          android:textColor="@android:color/white"
+	            android:textColorHint="@android:color/white"
+	          android:typeface="serif" >
+	      </TextView>
+	</TableRow>
+	
+		<!--  # of bumping  -->
+	    <TableRow
+	        android:id="@+id/tr_numberofbumping"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+
+	        <TextView
+	            android:id="@+id/tv_numberofbumpingresult"
+	            android:text="# of bumping:"
+	            android:textColor="@android:color/white"
+	            android:textColorHint="@android:color/white"
+	            android:textStyle="bold" >
+	        </TextView>
+    
+	    </TableRow>
+	    
+	    <!--  Time  -->
+	    <TableRow
+	        android:id="@+id/tr_timeEvent"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+
+	        <TextView
+	            android:id="@+id/tv_timeEvent"
+	            android:text="Time:"
+	            android:textColor="@android:color/white"
+	            android:textColorHint="@android:color/white"
+	            android:textStyle="bold" >
+	        </TextView>
+
+	        <TextView
+	            android:id="@+id/tv_timeEventresult"
+	            android:textColor="@android:color/white"
+	            android:textColorHint="@android:color/white"
+	            android:text="" >
+	        </TextView>
+	        
+	    </TableRow>
+	    
+	  	<!--  Latitude  -->
+	    <TableRow
+	        android:id="@+id/tr_latEvent"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+
+	        <TextView
+	            android:id="@+id/tv_latEvent"
+	            android:text="Latitude:"
+	            android:textColor="@android:color/white"
+	            android:textColorHint="@android:color/white"
+	            android:textStyle="bold" >
+	        </TextView>
+
+	        <TextView
+	            android:id="@+id/tv_latEventresult"
+	            android:textColor="@android:color/white"
+	            android:textColorHint="@android:color/white"
+	            android:text="" >
+	        </TextView>
+	        
+	    </TableRow>
+	    
+	  	<!--  Longitude  -->
+	    <TableRow
+	        android:id="@+id/tr_lngEvent"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+
+	        <TextView
+	            android:id="@+id/tv_lngEvent"
+	            android:text="Longitude:"
+	            android:textColor="@android:color/white"
+	            android:textColorHint="@android:color/white"
+	            android:textStyle="bold" >
+	        </TextView>
+
+	        <TextView
+	            android:id="@+id/tv_lngEventresult"
+	            android:textColor="@android:color/white"
+	            android:textColorHint="@android:color/white"
+	            android:text="" >
+	        </TextView>
+	        
+	    </TableRow>
+	    
+	  	<!--  Speed  -->
+	    <TableRow
+	        android:id="@+id/tr_speedEvent"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+
+	        <TextView
+	            android:id="@+id/tv_speedEvent"
+	            android:textColor="@android:color/white"
+	            android:textColorHint="@android:color/white"
+	            android:text="Speed:"
+	            android:textStyle="bold" >
+	        </TextView>
+
+	        <TextView
+	            android:id="@+id/tv_speedEventresult"
+	            android:textColor="@android:color/white"
+	            android:textColorHint="@android:color/white"
+	            android:text="" >
+	        </TextView>
+	        
+	        <TextView
+	            android:id="@+id/tv_speedunit2"
+	            android:gravity="center_horizontal"
+	            android:textColor="@android:color/white"
+	            android:textColorHint="@android:color/white" >
+
+	        </TextView>
+	        
+	    </TableRow>
+	    
+	  	<!--  Ai  -->
+	    <TableRow
+	        android:id="@+id/tr_ai"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+
+	        <TextView
+	            android:id="@+id/tv_ai"
+	            android:textColor="@android:color/white"
+	            android:textColorHint="@android:color/white"
+	            android:text="AI:"
+	            android:textStyle="bold" >
+	        </TextView>
+
+	        <TextView
+	            android:id="@+id/tv_airesult"
+	            android:textColor="@android:color/white"
+	            android:textColorHint="@android:color/white"
+	            android:text="" >
+	        </TextView>
+	        
+	    </TableRow>
+	    
+	     		<!-- Blank Row -->
+	    <TableRow
+	        android:id="@+id/tr_blank"
+	        android:layout_width="50dp"
+	        android:layout_height="100dp" >
+
+	        <TextView
+	            android:id="@+id/tv_blank"
+	            android:text=""
+	            android:textStyle="bold" >
+	        </TextView>
+
+		</TableRow>
+			     		<!-- Blank Row -->
+	    <TableRow
+	        android:id="@+id/tr_blank"
+	        android:layout_width="50dp"
+	        android:layout_height="100dp" >
+
+	        <TextView
+	            android:id="@+id/tv_blank"
+	            android:text=""
+	            android:textStyle="bold" >
+	        </TextView>
+
+		</TableRow>
+	    
+		</TableLayout>
+		
+		<TableLayout
+	    	android:id="@+id/tl_data"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:shrinkColumns="*"
+	    	android:stretchColumns="*" >
+	
+
+	        
+		  
+	</TableLayout>
+	
+	<TableRow
+	    android:id="@+id/tr_blank"
+	    android:layout_width="150dp"
+	    android:layout_height="120dp" >
+
+		<Button
+		    android:id="@+id/bt_log"
+		    android:layout_width="120dp"
+		    android:layout_height="80dp"
+		    android:background="@android:color/holo_red_light"
+		    android:text="Start"
+		    android:textColor="@android:color/white"
+		    android:textColorHint="@android:color/white"
+		    android:textSize="30sp"
+		    android:textStyle="bold" />
+		
+		<TextView
+	        android:id="@+id/tv_durationtimeresult"
+	        android:textColor="@android:color/white"
+	        android:textColorHint="@android:color/white"
+	        android:text=""
+	        android:gravity="center_horizontal" 
+	        android:textStyle="bold" >
+	    </TextView>
+	    
+	</TableRow>
+
+</TableLayout>
+		
+</RelativeLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/AbsoluteLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:ignore="Deprecated" >
+
+    <Button
+        android:id="@+id/c_gps_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="277dp"
+        android:layout_y="81dp"
+        android:onClick="gpsClick"
+        android:text="@string/c_gps"
+        android:textSize="13sp" />
+
+    <ToggleButton
+        android:id="@+id/c_3g_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="275dp"
+        android:layout_y="211dp"
+        android:onClick="mobileClick"
+        android:textOff="3G OFF"
+        android:textOn="3G ON" />
+
+    <ToggleButton
+        android:id="@+id/c_wifi_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="275dp"
+        android:layout_y="151dp"
+        android:onClick="wifiClick"
+        android:textOff="Wifi OFF"
+        android:textOn="Wifi ON" />
+
+    <SeekBar
+        android:id="@+id/c_BI_bar"
+        android:layout_width="335dp"
+        android:layout_height="wrap_content"
+        android:layout_x="11dp"
+        android:layout_y="408dp" />
+
+    <TextView
+        android:id="@+id/c_bump_index"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="124dp"
+        android:layout_y="381dp"
+        android:text="@string/e_bumping_index"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/c_hitting_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="130dp"
+        android:layout_y="276dp"
+        android:text="@string/e_hitting_rate"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/c_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="150dp"
+        android:layout_y="19dp"
+        android:text="@string/c_setting"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/yellow"
+        android:textSize="30sp" />
+
+    <SeekBar
+        android:id="@+id/c_hitting_rate_bar"
+        android:layout_width="338dp"
+        android:layout_height="wrap_content"
+        android:layout_x="8dp"
+        android:layout_y="311dp" />
+
+    <TextView
+        android:id="@+id/c_gpsText"
+        android:layout_width="263dp"
+        android:layout_height="wrap_content"
+        android:layout_x="7dp"
+        android:layout_y="84dp"
+        android:text="@string/c_gps_warning_text"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/c_wifiText"
+        android:layout_width="262dp"
+        android:layout_height="wrap_content"
+        android:layout_x="10dp"
+        android:layout_y="180dp"
+        android:text="@string/c_network_warning_text"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/c_enter_setting"
+        android:layout_width="130sp"
+        android:layout_height="wrap_content"
+        android:layout_x="130dp"
+        android:layout_y="444dp"
+        android:onClick="enterLogin"
+        android:text="@string/c_enter" />
+
+</AbsoluteLayout>

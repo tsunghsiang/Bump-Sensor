@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Bump Sensor</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_exit">Exit</string>
+        <string name="action_introduction">About</string>
+    <string name="tv_mainTitle">Bump Sensor</string>
+    <string name="tv_mainDescription">Log檔由在Android手機上執行的BumpsAlert程式產生。此程式除記錄手機內建之GPS、accelerometer及magnetic field sensor的資料外，也記錄垂直分量演算法和異常點偵測演算法計算過程中的重要數據，並記錄了異常點偵測演算法偵測到的震動事件。</string>
+    <string name="tv_author">Copyright©All Rights Reserved for NOL Lab</string>
+    <string name="tv_copyRight">版本：V1.0\n日期：2014.1.2\n維護人員：黃小紅 (siauhong100@hotmail.com)\n\nCopyright©All Rights Reserved for NOL Lab</string>
+    <string name="bump_recorder">Bump Recorder</string>
+    <string name="info_icon">info</string>
+    <string name="_c_Atificial_Return">人工回報頁面</string>
+    <string name="return_man">name</string>
+    <string name="photo">photo</string>
+    <string name="event_type">Event Type</string>
+    <string name="location">Location</string>
+    <string name="Mark_Time">time</string>
+    <string name="_user">通報人:</string>
+    <string name="_type">事件類型:</string>
+    <string name="_location">位置:</string>
+    <string name="_time">時間:</string>
+    <string name="_snapshot">快速照相</string>
+    <string name="_iconClick">請輕觸左方圖示</string>
+    <string name="_handin">呈報</string>
+    <string name="_locClick">請輕觸左方圖示</string>
+    <string name="artificial_return">Artificial Return</string>
+    <string name="user">User</string>
+    <string name="snap_shot">Snap Shot</string>
+    <string name="location_">Location:</string>
+    <string name="type_">Type:</string>
+    <string name="time_">Time:</string>
+    <string name="hand_in">HAND IN</string>
+    <string name="please_click_left_icon">Please click left icon</string>
+    <string name="user_">User:</string>
+    <string name="investigator_report">Investigator Report</string>
+    <string name="report">REPORT</string>
+    <string name="e_settings">Settings</string>
+    <string name="e_gps_warning_text">If positioning interfaces are not turned on, the related functionalities will not be  available.</string>
+    <string name="e_wifi_warning_text">If networking interfaces are not turned on, the related functionalities will not be available.</string>
+    <string name="e_3g_off">3G OFF</string>
+    <string name="e_hitting_rate">Hitting Rate</string>
+    <string name="e_bumping_index">Bumping Index</string>
+    <string name="c_setting">設定</string>
+    <string name="c_gps_warning_text">請開啟衛星定位，以免部分功能無法執行</string>
+    <string name="c_network_warning_text">請連接無線網路，避免部分功能無法執行</string>
+    <string name="c_bumpSensor">碰撞傳感器</string>
+    <string name="bump_sensor">Bump Sensor</string>
+    <string name="c_codeExpress">程式簡介</string>
+    <string name="e_codeExpress">Introduction</string>
+    <string name="c_privacy">隱私權原則</string>
+    <string name="e_privacy">Privacy Policy</string>
+    <string name="c_sysDeveloper">系統開發人員</string>
+    <string name="e_sysDeveloper">System Developers</string>
+    <string name="c_appIntroText">本程式提供紀錄使用者道路狀況相關資訊，包含車輛震動數據,路面狀況評估,異常點偵測等，並可在地圖上呈現道路品質,異常點通知,震動參考值等相關統計資訊</string>
+    <string name="e_appIntroText">The program provides user-recorded information about road conditions, inclusive of vehicle vibration data, pavement condition assessment, anomalies detection, etc., and show road quality, anomalies notification ,vibration and other relevant statistical information. Users must create an account beforehand, and in user confirmation, upload the mobile-side data to server.</string>
+    <string name="c_privcy1">本程式使用者須在伺服器以個人擁有之email開設帳號，並經email進行帳號確認後，方可使用本程式。</string>
+    <string name="c_privacy2">本程式使用GPS及手機內建感測器執行軌跡記錄及量測車輛震動以評估行經之路面之平整，經使用者同意後，相關資料將透過網路上傳伺服器，以提供歷史記錄儲存與統計，並用於本實驗室的相關研究與應用。</string>
+    <string name="c_privacy3">在使用者同意本實驗室對於本程式所可能衍生的法律問題及傷害無需負任何法律上的責任。</string>
+    <string name="c_copyright">版權聲明</string>
+    <string name="c_copyright1">本程式由國立交通大學網路最佳化實驗室所開發，版權所有【國立交通大學網路最佳化實驗室】。</string>
+    <string name="c_coptright2">使用者可無償使用本程式，但需於伺服器註冊後使用本程式。在使用者同意後，相關記錄將上傳伺服器儲存。使用者同意將相關資料無償提供本實驗室使用。</string>
+    <string name="c_copyright3">Copyright All Rights Reserved for NOL, NCTU.</string>
+    <string name="c_sysdeveloper1">App開發及維護：吳琮祥(aplmnbvcxz@gmail.com)</string>
+    <string name="c_sysdeveloper2">API開發：黃小紅、林彥勳、翁子婷</string>
+    <string name="e_copyright">CopyRight</string>
+    <string name="e_privacy1">Users should create their own accounts via emails, and are allowed to use the app after account confirmation.</string>
+    <string name="e_privacy2">The app use GPS and built-in sensor to execute track record and measure vehicle vibration for pavement condition assessment. The relevant data will be uploaded to srver after user&amp;apos;s agreement for history record storage, statistic, related research and application in our lab.</string>
+    <string name="e_privacy3">User agrees that our lab need not to take any legal responsibilities for legal issues derived from the program.</string>
+    <string name="e_copyright1">Copyright All Rights Reserved for NOL, NCTU.</string>
+    <string name="e_sysdeveloper1">App development :Andy(aplmnbvcxz.gmail.com)</string>
+    <string name="e_sysdeveloper2">API development :Ng Siau Hong, Mark, Mars</string>
+    <string name="ipave">iPave</string>
+    <string name="bump">img</string>
+    <string name="_chinese">中文</string>
+    <string name="english">English</string>
+    <string name="c_apply">註冊帳號</string>
+    <string name="account_application">Account Application</string>
+    <string name="c_mailbox">信箱:</string>
+    <string name="e_email">EMAIL:</string>
+    <string name="c_password">密碼:</string>
+    <string name="e_password">PASSWORD:</string>
+    <string name="c_nextstep">下一步</string>
+    <string name="e_next_step">Next Step</string>
+    <string name="c_name">姓名:</string>
+    <string name="c_car_model">車型:</string>
+    <string name="c_mobile_typr">手機型號:</string>
+    <string name="e_name">NAME:</string>
+    <string name="e_car_type">CAR MODEL:</string>
+    <string name="e_mobile_type">PHONE MODEL:</string>
+    <string name="c_bump_sensor">帳號登入</string>
+    <string name="c_login_email">"信箱 : "</string>
+    <string name="c_login_password">"密碼 :  "</string>
+    <string name="c_login_info">透過以下按鈕連結登入資訊</string>
+    <string name="c_login_link_info">透過以下按鈕連結登入資訊</string>
+    <string name="c_record_logininfo">記住登入資訊?</string>
+    <string name="c_login_registration">註冊帳號</string>
+    <string name="c_never_register">尚未註冊?</string>
+    <string name="c_unregistration">註銷帳號</string>
+    <string name="e_bump_sensor">ACCOUNT LOGIN</string>
+    <string name="e_login_email">"EMAIL : "</string>
+    <string name="e_login_pwd">"PASSWORD : "</string>
+    <string name="e_login_link_info">link to the registration information</string>
+    <string name="e_login_info">link to the registration information</string>
+    <string name="e_unregistration">Unregistration</string>
+    <string name="e_registration">Registration</string>
+    <string name="e_record_logininfo">Remember Login Information?</string>
+    <string name="c_drawer_open">開啟</string>
+    <string name="c_drawer_close">關閉</string>
+
+    <!-- for chinese drawer -->
+	<string name="c_drawer_open">Open navigation drawer</string>
+	<string name="c_drawer_close">Close navigation drawer</string>
+	
+	<string-array name="c_drawer_menu">
+	    <item>異常點記錄</item>
+	    <item>設定</item>
+	    <item>用路人回報</item>
+	    <item>智慧探偵車</item>
+	    <item>程式說明</item>
+	</string-array>    
+	<string name="c_item">Item</string>
+	
+    <!-- for english drawer -->
+	<string name="e_drawer_open">Open navigation drawer</string>
+	<string name="e_drawer_close">Close navigation drawer</string>
+	
+	<string-array name="e_drawer_menu">
+	    <item>Bump Logger</item>
+	    <item>Settings</item>
+	    <item>User Report</item>
+	    <item>Smart Probe Car</item>
+	    <item>Welcome/About</item>
+	</string-array>
+	<string name="e_item">Item</string>
+	<string name="c_enter">確認</string>
+	<string name="e_enter">ENTER</string>
+	<string name="c_login">登入</string>
+	<string name="e_login">LOGIN</string>
+	<string name="c_gps">GPS</string>
+	<string name="e_gps">GPS</string>
+	<string name="cgps">"GPS OFF "</string>
+	<string name="c_gps_off">GPS OFF</string>  	
+</resources>

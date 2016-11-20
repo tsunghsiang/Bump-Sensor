@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:onClick="facebookButton"
+    tools:ignore="Deprecated" >
+
+    <TextView
+        android:id="@+id/c_login_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="126dp"
+        android:layout_y="12dp"
+        android:text="@string/c_bump_sensor"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/oil_green"
+        android:textSize="32sp"
+        android:textStyle="italic" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="325dp"
+        android:layout_height="330dp"
+        android:layout_x="18dp"
+        android:layout_y="-27dp"
+        android:contentDescription="@string/c_bump_sensor"
+        android:src="@drawable/login_bump" />
+
+    <TextView
+        android:id="@+id/c_login_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="20dp"
+        android:layout_y="235dp"
+        android:text="@string/c_login_email"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/c_login_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="21dp"
+        android:layout_y="286dp"
+        android:text="@string/c_login_password"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/c_login_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="86dp"
+        android:layout_y="283dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:width="260dp" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/c_login_mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="86dp"
+        android:layout_y="238dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:width="260dp" />
+
+    <ImageButton
+        android:id="@+id/c_fb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="28dp"
+        android:layout_y="360dp"
+        android:contentDescription="@string/c_login_info"
+        android:onClick="facebookButton"
+        android:src="@drawable/fb" />
+
+    <ImageButton
+        android:id="@+id/c_gmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="154dp"
+        android:layout_y="361dp"
+        android:contentDescription="@string/c_login_info"
+        android:onClick="gmailButton"
+        android:src="@drawable/gmail" />
+
+    <ImageButton
+        android:id="@+id/c_linkedin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="282dp"
+        android:layout_y="358dp"
+        android:contentDescription="@string/c_login_info"
+        android:onClick="linkedinButton"
+        android:src="@drawable/linkedin" />
+
+    <TextView
+        android:id="@+id/c_link_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="87dp"
+        android:layout_y="336dp"
+        android:text="@string/c_login_link_info"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/black" />
+
+    <CheckBox
+        android:id="@+id/c_check_logininfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="21dp"
+        android:layout_y="472dp"
+        android:text="@string/c_record_logininfo"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/c_unregistration"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_x="72dp"
+        android:layout_y="400dp"
+        android:onClick="unregisterButton"
+        android:text="@string/c_unregistration"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/c_registration"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_x="200dp"
+        android:layout_y="400dp"
+        android:onClick="registerButton"
+        android:text="@string/c_login_registration"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/e_login"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="75dp"
+        android:layout_height="38dp"
+        android:layout_x="140dp"
+        android:layout_y="439dp"
+        android:onClick="enterNavigation"
+        android:text="@string/c_login" />
+
+</AbsoluteLayout>

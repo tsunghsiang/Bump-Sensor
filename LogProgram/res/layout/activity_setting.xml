@@ -1,0 +1,212 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".SettingEndActivity" >
+
+    <TextView
+        android:id="@+id/tv_collector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="28dp"
+        android:text="Data Collector:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tv_vehiclemodel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_collector"
+        android:layout_below="@+id/tv_collector"
+        android:layout_marginTop="14dp"
+        android:text="Vehicle Model:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/et_collector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_collector"
+        android:layout_toRightOf="@+id/tv_collector"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/tv_plateNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_vehiclemodel"
+        android:layout_below="@+id/et_vehiclemodel"
+        android:layout_marginTop="16dp"
+        android:text="Plate Number:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/et_phonemodel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_plateNumber"
+        android:layout_marginLeft="13dp"
+        android:layout_toRightOf="@+id/tv_smartphonemodel"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/tv_smartphonemodel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/et_phonemodel"
+        android:layout_alignLeft="@+id/tv_plateNumber"
+        android:text="Smartphone Model:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/et_plateNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_vehiclemodel"
+        android:layout_toRightOf="@+id/tv_plateNumber"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/et_vehiclemodel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_vehiclemodel"
+        android:layout_alignRight="@+id/et_collector"
+        android:layout_toRightOf="@+id/tv_collector"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/tv_mountingmethod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_smartphonemodel"
+        android:layout_below="@+id/tv_smartphonemodel"
+        android:layout_marginTop="13dp"
+        android:text="Mounting Method:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Spinner
+        android:id="@+id/sp_mountingmethod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_mountingmethod"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/et_phonemodel"
+        android:layout_toRightOf="@+id/tv_smartphonemodel" />
+    
+    <Spinner
+        android:id="@+id/sp_mountinglocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/et_memo"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/sp_mountingmethod"
+        android:layout_toRightOf="@+id/e_returnText" />
+
+    <TextView
+        android:id="@+id/tv_memo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/e_returnText"
+        android:layout_below="@+id/e_returnText"
+        android:layout_marginTop="14dp"
+        android:text="Memo:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/et_memo"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/e_returnText"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/tv_memo"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/e_returnText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_mountingmethod"
+        android:layout_below="@+id/tv_mountingmethod"
+        android:layout_marginTop="14dp"
+        android:text="Mounting Location:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <Button
+        android:id="@+id/bt_skip"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="440dp"
+        android:onClick="gotoCancel"
+        android:text="CANCEL" />
+
+    <Button
+        android:id="@+id/bt_informationOK"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="440dp"
+        android:onClick="gotoSave"
+        android:text="SAVE" />
+
+    <TextView
+        android:id="@+id/tv_c1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_memo"
+        android:layout_below="@+id/et_memo"
+        android:layout_marginTop="21dp"
+        android:text="C1:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/et_C1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_c1"
+        android:layout_alignBottom="@+id/tv_c1"
+        android:layout_alignRight="@+id/bt_informationOK"
+        android:layout_toRightOf="@+id/tv_c1"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/tv_c2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_c1"
+        android:layout_below="@+id/et_C1"
+        android:layout_marginTop="12dp"
+        android:text="C2:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/et_C2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_c2"
+        android:layout_alignBottom="@+id/tv_c2"
+        android:layout_alignRight="@+id/et_C1"
+        android:layout_toRightOf="@+id/tv_c2"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/e_privacy2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_c2"
+        android:layout_below="@+id/et_C2"
+        android:layout_marginTop="15dp"
+        android:text="*please do not use character &quot;/&quot;" />
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:ignore="Deprecated" >
+
+    <Button
+        android:id="@+id/chinesebutton"
+        android:layout_width="126dp"
+        android:layout_height="64dp"
+        android:layout_x="49dp"
+        android:layout_y="313dp"
+        android:onClick="C_interfaceClick"
+        android:text="@string/_chinese"
+        android:textColor="@color/hard_purple"
+        android:textSize="25sp"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/englishbutton"
+        android:layout_width="121dp"
+        android:layout_height="63dp"
+        android:layout_x="189dp"
+        android:layout_y="313dp"
+        android:onClick="E_interfaceClick"
+        android:text="@string/english"
+        android:textColor="@color/hard_purple"
+        android:textSize="25sp"
+        android:textStyle="bold|italic" />
+
+    <ImageView
+        android:id="@+id/titleimg"
+        android:layout_width="262dp"
+        android:layout_height="230dp"
+        android:layout_x="45dp"
+        android:layout_y="71dp"
+        android:contentDescription="@string/bump"
+        android:src="@drawable/bump" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="122dp"
+        android:layout_y="19dp"
+        android:text="@string/ipave"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/purple"
+        android:textSize="35sp"
+        android:textStyle="bold|italic"
+        android:typeface="monospace" />
+
+</AbsoluteLayout>

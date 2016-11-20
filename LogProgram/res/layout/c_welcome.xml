@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/AbsoluteLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:ignore="Deprecated" >
+
+    <TextView
+        android:id="@+id/c_appIntroText"
+        android:layout_width="296dp"
+        android:layout_height="wrap_content"
+        android:layout_x="34dp"
+        android:layout_y="66dp"
+        android:text="@string/c_appIntroText"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/c_privacyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="18dp"
+        android:layout_y="135dp"
+        android:text="@string/c_privacy"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/green"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/c_privacy2"
+        android:layout_width="316dp"
+        android:layout_height="wrap_content"
+        android:layout_x="33dp"
+        android:layout_y="195dp"
+        android:text="@string/c_privacy2"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/c_privacy3"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_x="32dp"
+        android:layout_y="280dp"
+        android:text="@string/c_privacy3"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/c_privacy1"
+        android:layout_width="314dp"
+        android:layout_height="wrap_content"
+        android:layout_x="32dp"
+        android:layout_y="160dp"
+        android:text="@string/c_privcy1"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/c_copyright1"
+        android:layout_width="327dp"
+        android:layout_height="wrap_content"
+        android:layout_x="33dp"
+        android:layout_y="340dp"
+        android:text="@string/c_copyright1"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/c_copyright2"
+        android:layout_width="331dp"
+        android:layout_height="wrap_content"
+        android:layout_x="34dp"
+        android:layout_y="375dp"
+        android:text="@string/c_coptright2"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/c_copyright3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="32dp"
+        android:layout_y="425dp"
+        android:text="@string/c_copyright3"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/c_copyright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="15dp"
+        android:layout_y="315dp"
+        android:text="@string/c_copyright"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/green"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/c_sysDeveloper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="16dp"
+        android:layout_y="445dp"
+        android:text="@string/c_sysDeveloper"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/green"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/c_codeIntroduction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="106dp"
+        android:layout_y="10dp"
+        android:text="@string/c_bumpSensor"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/c_sysdeveloper2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="29dp"
+        android:layout_y="490dp"
+        android:text="@string/c_sysdeveloper2"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/c_sysDeveloper1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="29dp"
+        android:layout_y="470dp"
+        android:text="@string/c_sysdeveloper1"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/c_codeExpress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="18dp"
+        android:layout_y="40dp"
+        android:text="@string/c_codeExpress"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/green"
+        android:textSize="20sp" />
+
+</AbsoluteLayout>
